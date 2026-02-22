@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-wood-dark: #7A4E2D;
+  --color-wood-light: #C89B6D;
+  --color-ivory: #FBF6F1;
+  --color-ink: #2E1B0F;
+  
+  --radius-artisan: 4px;
+}
+
+@layer base {
+  body {
+    @apply bg-ivory text-ink font-sans text-[14px] antialiased;
+  }
+  
+  h1, h2 {
+    @apply text-[53px] leading-tight font-medium tracking-tight;
+  }
+}
+
+.font-akkurat {
+  /* Using Inter as fallback for Akkurat if not available, but setting up the style */
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
